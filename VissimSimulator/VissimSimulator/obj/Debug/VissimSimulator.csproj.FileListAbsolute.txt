@@ -7,3 +7,6 @@ c:\users\yzh.redmond\documents\visual studio 2013\Projects\VissimSimulator\Vissi
 C:\Users\Student\Desktop\VissimSimulator\VissimSimulator\bin\Debug\VissimSimulator.exe.config
 C:\Users\Student\Desktop\VissimSimulator\VissimSimulator\obj\Debug\VissimSimulator.exe
 C:\Users\Student\Desktop\VissimSimulator\VissimSimulator\obj\Debug\VissimSimulator.pdb
+C:\Users\Student\Desktop\VissimSimulator-master\VISSIMSimulator\VissimSimulator\bin\Debug\VissimSimulator.exe.config
+C:\Users\Student\Desktop\VissimSimulator-master\VISSIMSimulator\VissimSimulator\obj\Debug\VissimSimulator.exe
+C:\Users\Student\Desktop\VissimSimulator-master\VISSIMSimulator\VissimSimulator\obj\Debug\VissimSimulator.pdb

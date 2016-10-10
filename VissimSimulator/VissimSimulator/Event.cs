@@ -1,27 +1,49 @@
 ﻿using System;
-using VS = VISSIMSimulator;
+using VS = VissimSimulator;
 
 /// <summary>
 /// Summary description for Class1
 /// </summary>
-namespace VISSIMSimulator
+namespace VissimSimulator
 {
     public static class EventFactory
-    { 
-        public static EventType CreateEventType()
+    {
+        ///Decide which EventType and Event TimeSpan.
+        public static EventType CreateEventType(int i)
         {
-            return EventType.OnCall;
-        }
-
-        public static VS.TimeSpan CreateTimeSpan()
-        {
-            return new VS.TimeSpan
+            if (i == 0)
             {
-                StartTick = 0,
-                EndTick = 3600
-            };
+                return EventType.OnCall;
+            }
+
+            if (i != 0)
+            {
+                return EventType.PowerOn;
+            }
+
+
+        }
+        public static VS.TimeSpan CreateTimeSpan(EventType)
+        {
+            if (EventType == OnCall)
+            {
+                return new VS.TimeSpan
+                {
+                    StartTick = 0,
+                    EndTick = 3600
+                };
+            }
+            if (EventType == OnCall)
+            {
+                return new VS.TimeSpan
+                {
+                    StartTick = 0,
+                    EndTick = 1
+                };
+            }
         }
     }
+}
 
     public class Event
     {
@@ -69,4 +91,5 @@ namespace VISSIMSimulator
         public long EndTick { get; set; }
     }
 }
+
 
